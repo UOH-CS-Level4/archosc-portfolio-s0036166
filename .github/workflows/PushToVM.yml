@@ -1,25 +1,24 @@
 name: Push To Windows VM
 
+
 on:
   push:
     branches: [main]
 
+
 jobs:
   deploy:
-    runs-on:
-      - self-hosted
-      - windows
-      - VM1
+    runs-on: self-hosted
+
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Deploy to IIS folder
         shell: powershell
-        run: |
-          $src = "$env:GITHUB_WORKSPACE\*"
-          $dst = "C:\inetpub\wwwroot"
 
-          New-Item -Path $dst -ItemType Directory -Force | Out-Null
+        run:
+          $src = "${env:GITHUB_WORKSPACE}\*"
+          $dst = "C:\inetpub\wwwroot\"
+
+          New-Item -ItemType Directory -Force -Path $dst | Out-Null
           Copy-Item -Path $src -Destination $dst -Recurse -Force
+
