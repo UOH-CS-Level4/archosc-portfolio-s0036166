@@ -12,10 +12,11 @@ jobs:
 
 
     steps:
+      - uses: actions/checkout@v4
       - name: Deploy to IIS folder
         shell: powershell
 
-        run:
+        run: |
           $src = "${env:GITHUB_WORKSPACE}\*"
           $dst = "C:\inetpub\wwwroot\"
 
