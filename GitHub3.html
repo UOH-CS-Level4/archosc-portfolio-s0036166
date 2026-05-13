@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="GitHub1.html">GitHub Lab 1</a>
+    <a href="GitHub2.html">GitHub Lab 2</a>
+    <a class="active" href="GitHub3.html">GitHub Lab 3</a>
+    <a href="GitHub4.html">GitHub Lab 4</a>
+    <a href="GitHub5.html">GitHub Lab 5</a>
+    <a href="GitHub6.html">GitHub Lab 6</a>
+</div>
+<head>
+    <title>GitHub Lab 1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box img {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Lab 3</h1>
+    <button onclick="myFunction()" type="button">Toggle Dark Mode</button>
+
+    <div class="container">
+        <div class="box">
+            <img src="Pictures/Lab3/Screenshot 2026-05-10 204958.png" alt="Lab 3 Screenshot 1">
+            <div class="box-text">
+                <p>I set up a GitHub Pipeline and created a new workflow. Afterwards, I changed "main.yml" to "deployment.yml". The ".yml" stands for YAML, which is the programming language used for CI/CD pipelines in GitHub.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Pictures/Lab3/Screenshot 2026-05-10 205158.png" alt="Lab 3 Screenshot 2">
+            <div class="box-text">
+                <p>Inside the workflow, I wrote the name of this pipeline to be shown inside the GitHub GUI. Then, I wrote the commands to make my GitHub action run every time I push to the main branch. The following command spins up our VM and retrieves the repository. After the name command, I added permissions to push to GitHub Pages without issue. The rest of the "jobs" commands generate a GitHub artifact and upload it to GitHub. This then deploys it.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

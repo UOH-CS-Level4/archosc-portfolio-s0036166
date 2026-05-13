@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="GitHub1.html">GitHub Lab 1</a>
+    <a href="GitHub2.html">GitHub Lab 2</a>
+    <a href="GitHub3.html">GitHub Lab 3</a>
+    <a href="GitHub4.html">GitHub Lab 4</a>
+    <a href="GitHub5.html">GitHub Lab 5</a>
+    <a class="active" href="GitHub6.html">GitHub Lab 6</a>
+</div>
+<head>
+    <title>GitHub Lab 6</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .box img {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>GitHub Lab 6</h1>
+    <button onclick="myFunction()" type="button">Toggle Dark Mode</button>
+
+    <div class="container">
+        <div class="box">
+            <img src="Pictures/Lab6/Picture12.png" alt="Lab 6 Picture 1">
+            <div class="box-text">
+                <p>The ipconfig command in terminal shows the VM's IP address. This screenshot shows this for VM-1.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Pictures/Lab6/Picture13.png" alt="Lab 6 Picture 2">
+            <div class="box-text">
+                <p>In this screenshot, VM-1 sends a packet to VM-2 and records its reply time and the amount of packet loss, if any.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Pictures/Lab6/Picture14.png" alt="Lab 6 Picture 3">
+            <div class="box-text">
+                <p>This picture shows the NetConnection lookup, displaying all the relevant stats of the server.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Pictures/Lab6/Picture15.png" alt="Lab 6 Picture 4">
+            <img src="Pictures/Lab6/Picture16.png" alt="Lab 6 Picture 5">
+            <div class="box-text">
+                <p>I repeated these steps but for VM-2 to VM-1.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Pictures/Lab6/Picture17.png" alt="Lab 6 Picture 6">
+            <div class="box-text">
+                <p>In this screenshot, I created a GitHub runner that is currently listening for jobs.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="Pictures/Lab6/Picture18.png" alt="Lab 6 Picture 7">
+            <div class="box-text">
+                <p>After, I wrote a YAML file for that runner to use to take my repository and push it onto my VM, automatically copying it into the default location for IIS.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
